@@ -16,15 +16,14 @@ Pebble.refreshLoop();
 
 (async function init() {
     await assets.load([
-		
-		"js/setup.js",
-		"js/main.js",
-		"js/species.js",
-		
-    ], false);
-	await assets["js/species.js"].execute();
-	await assets["js/setup.js"].execute();
-	await assets["js/main.js"].execute();
 
-	Animate();
+        "js/setup.js",
+        "js/main.js",
+        "js/species.js",
+
+    ], false);
+    await assets["js/species.js"].execute();
+    await assets["js/setup.js"].execute();
+    await assets["js/main.js"].execute();
+    Animate();
 })();

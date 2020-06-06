@@ -1,6 +1,6 @@
 function Animate(timestamp) {
     animator = window.requestAnimationFrame(Animate);
-   
+
     if (Pebble.buttons.length > 0) {
         canvas.domElement.style.cursor = "auto";
         Pebble.buttons.forEach(button => {
@@ -16,5 +16,5 @@ function Animate(timestamp) {
     }
 
     Pebble.render(canvas.domElement, stage, true, Pebble.getLagOffset(timestamp, world.Scene.update));
-	
+
 }
